@@ -7,7 +7,7 @@ pub fn reverse_string(s: &str) {
       .collect::<String>();
     println!("Reversed chars: {}", reversed_string);
     let v: String = s
-      .split('')
+      .split(' ')
       .rev()
       .collect::<String>();
     println!("Reversed string: {}", &v);
