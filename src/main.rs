@@ -6,7 +6,7 @@
 // use disemvowel::disemvowel;
 use roman_numerals::num_as_roman;
 
-use crate::largest_num::largest_num;
+// use crate::largest_num::largest_num;
 
 /* mod prime_number; */
 /* mod factorial; */
@@ -45,17 +45,17 @@ fn main() {
 
     println!("{:?}", num_as_roman(123));
 
-    println!("largest number is {}", largest_num(&vec![1, 5, 2, 8, 0]));
-    println!(
-        "largest number is {}",
-        largest_num(&vec![2000, 5, 102, 80, 100000])
-    );
-    println!(
-        "largest number is {}",
-        largest_num(&vec![10, 50, 20, 8, 40])
-    );
-    println!(
-        "largest number is {}",
-        largest_num(&vec![11, 15, 12, 18, 0])
-    );
+    // println!("largest number is {}", largest_num(&vec![1, 5, 2, 8, 0]));
+    // println!(
+    //     "largest number is {}",
+    //     largest_num(&vec![2000, 5, 102, 80, 100000])
+    // );
+    // println!(
+    //     "largest number is {}",
+    //     largest_num(&vec![10, 50, 20, 8, 40])
+    // );
+    // println!(
+    //     "largest number is {}",
+    //     largest_num(&vec![11, 15, 12, 18, 0])
+    // );
 }
