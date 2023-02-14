@@ -7,9 +7,11 @@
 // use roman_numerals::num_as_roman;
 
 // use crate::largest_num::largest_num;
-use duplicate_encoder::duplicate_encode;
+// use duplicate_encoder::duplicate_encode;
 
 /* use validate_pin::validate_pin; */
+
+use love_vs_friendship::words_to_marks;
 
 /* mod prime_number; */
 /* mod factorial; */
@@ -20,7 +22,8 @@ use duplicate_encoder::duplicate_encode;
 // mod roman_numerals;
 /* mod count_bits; */
 /* mod validate_pin; */
-mod duplicate_encoder;
+// mod duplicate_encoder;
+mod love_vs_friendship;
 // mod median_and_mode;
 /* mod pyg_latin; */
 
@@ -74,8 +77,13 @@ fn main() {
     // println!("Valid pin: {}", validate_pin("12.0.9"));
     // println!("Valid pin: {}", validate_pin("+111"));
 
-    println!("encoded string is {}", duplicate_encode("din"));
-    println!("encoded string is {}", duplicate_encode("Success"));
-    println!("encoded string is {}", duplicate_encode("recede"));
-    println!("encoded string is {}", duplicate_encode("(( @"));
+    // println!("encoded string is {}", duplicate_encode("din"));
+    // println!("encoded string is {}", duplicate_encode("Success"));
+    // println!("encoded string is {}", duplicate_encode("recede"));
+    // println!("encoded string is {}", duplicate_encode("(( @"));
+
+    println!("words to marks {}", words_to_marks("love"));
+    println!("words to marks {}", words_to_marks("attitude"));
+    println!("words to marks {}", words_to_marks("friendship"));
+    println!("words to marks {}", words_to_marks("knowledge"));
 }
