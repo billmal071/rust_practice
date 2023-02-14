@@ -4,7 +4,7 @@
 // use reverse_string::reverse_string;
 // use anagram::anagram;
 // use disemvowel::disemvowel;
-use roman_numerals::num_as_roman;
+// use roman_numerals::num_as_roman;
 
 // use crate::largest_num::largest_num;
 
@@ -13,8 +13,9 @@ use roman_numerals::num_as_roman;
 // mod reverse_string;
 // mod anagram;
 // mod disemvowel;
-pub mod largest_num;
-mod roman_numerals;
+// pub mod largest_num;
+// mod roman_numerals;
+mod count_bits;
 // mod median_and_mode;
 /* mod pyg_latin; */
 
@@ -43,7 +44,7 @@ fn main() {
     // println!("{:?}", mode(&mode1));
     // println!("{:?}", mode(&mode2));
 
-    println!("{:?}", num_as_roman(123));
+    // println!("{:?}", num_as_roman(123));
 
     // println!("largest number is {}", largest_num(&vec![1, 5, 2, 8, 0]));
     // println!(
@@ -58,4 +59,6 @@ fn main() {
     //     "largest number is {}",
     //     largest_num(&vec![11, 15, 12, 18, 0])
     // );
+    println!("The number of ones(1) is {}", count_bits::count_bit(6));
+    println!("The number of ones(1) is {}", count_bits::count_bit(1234));
 }
