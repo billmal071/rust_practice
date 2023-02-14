@@ -8,6 +8,8 @@
 
 // use crate::largest_num::largest_num;
 
+use validate_pin::validate_pin;
+
 /* mod prime_number; */
 /* mod factorial; */
 // mod reverse_string;
@@ -15,7 +17,8 @@
 // mod disemvowel;
 // pub mod largest_num;
 // mod roman_numerals;
-mod count_bits;
+/* mod count_bits; */
+mod validate_pin;
 // mod median_and_mode;
 /* mod pyg_latin; */
 
@@ -59,6 +62,13 @@ fn main() {
     //     "largest number is {}",
     //     largest_num(&vec![11, 15, 12, 18, 0])
     // );
-    println!("The number of ones(1) is {}", count_bits::count_bit(6));
-    println!("The number of ones(1) is {}", count_bits::count_bit(1234));
+    // println!("The number of ones(1) is {}", count_bits::count_bit(6));
+    // println!("The number of ones(1) is {}", count_bits::count_bit(1234));
+    println!("Valid pin: {}", validate_pin("1234"));
+    println!("Valid pin: {}", validate_pin("123456"));
+    println!("Valid pin: {}", validate_pin("12345"));
+    println!("Valid pin: {}", validate_pin("a234"));
+    println!("Valid pin: {}", validate_pin(""));
+    println!("Valid pin: {}", validate_pin("12.0.9"));
+    println!("Valid pin: {}", validate_pin("+111"));
 }
