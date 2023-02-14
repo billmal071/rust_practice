@@ -7,8 +7,9 @@
 // use roman_numerals::num_as_roman;
 
 // use crate::largest_num::largest_num;
+use duplicate_encoder::duplicate_encode;
 
-use validate_pin::validate_pin;
+/* use validate_pin::validate_pin; */
 
 /* mod prime_number; */
 /* mod factorial; */
@@ -18,7 +19,8 @@ use validate_pin::validate_pin;
 // pub mod largest_num;
 // mod roman_numerals;
 /* mod count_bits; */
-mod validate_pin;
+/* mod validate_pin; */
+mod duplicate_encoder;
 // mod median_and_mode;
 /* mod pyg_latin; */
 
@@ -64,11 +66,16 @@ fn main() {
     // );
     // println!("The number of ones(1) is {}", count_bits::count_bit(6));
     // println!("The number of ones(1) is {}", count_bits::count_bit(1234));
-    println!("Valid pin: {}", validate_pin("1234"));
-    println!("Valid pin: {}", validate_pin("123456"));
-    println!("Valid pin: {}", validate_pin("12345"));
-    println!("Valid pin: {}", validate_pin("a234"));
-    println!("Valid pin: {}", validate_pin(""));
-    println!("Valid pin: {}", validate_pin("12.0.9"));
-    println!("Valid pin: {}", validate_pin("+111"));
+    // println!("Valid pin: {}", validate_pin("1234"));
+    // println!("Valid pin: {}", validate_pin("123456"));
+    // println!("Valid pin: {}", validate_pin("12345"));
+    // println!("Valid pin: {}", validate_pin("a234"));
+    // println!("Valid pin: {}", validate_pin(""));
+    // println!("Valid pin: {}", validate_pin("12.0.9"));
+    // println!("Valid pin: {}", validate_pin("+111"));
+
+    println!("encoded string is {}", duplicate_encode("din"));
+    println!("encoded string is {}", duplicate_encode("Success"));
+    println!("encoded string is {}", duplicate_encode("recede"));
+    println!("encoded string is {}", duplicate_encode("(( @"));
 }
