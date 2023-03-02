@@ -11,7 +11,9 @@
 
 /* use validate_pin::validate_pin; */
 
-use love_vs_friendship::words_to_marks;
+// use love_vs_friendship::words_to_marks;
+use petals::how_much_i_love_you;
+// use same::same;
 
 /* mod prime_number; */
 /* mod factorial; */
@@ -23,9 +25,12 @@ use love_vs_friendship::words_to_marks;
 /* mod count_bits; */
 /* mod validate_pin; */
 // mod duplicate_encoder;
-mod love_vs_friendship;
+/* mod love_vs_friendship; */
 // mod median_and_mode;
 /* mod pyg_latin; */
+
+mod petals;
+mod same;
 
 fn main() {
     // prime_number::is_prime_number(1);
@@ -82,8 +87,34 @@ fn main() {
     // println!("encoded string is {}", duplicate_encode("recede"));
     // println!("encoded string is {}", duplicate_encode("(( @"));
 
-    println!("words to marks {}", words_to_marks("love"));
-    println!("words to marks {}", words_to_marks("attitude"));
-    println!("words to marks {}", words_to_marks("friendship"));
-    println!("words to marks {}", words_to_marks("knowledge"));
+    // println!("words to marks {}", words_to_marks("love"));
+    // println!("words to marks {}", words_to_marks("attitude"));
+    // println!("words to marks {}", words_to_marks("friendship"));
+    // println!("words to marks {}", words_to_marks("knowledge"));
+
+    println!("{} petals is: {}", 8, how_much_i_love_you(8));
+    println!("{} petals is: {}", 30, how_much_i_love_you(30));
+    println!("{} petals is: {}", 1, how_much_i_love_you(1));
+    println!("{} petals is: {}", 3, how_much_i_love_you(3));
+    println!("{} petals is: {}", 7, how_much_i_love_you(7));
+    println!("{} petals is: {}", 6, how_much_i_love_you(6));
+    println!("{} petals is: {}", 5, how_much_i_love_you(5));
+
+    // println!(
+    //     "same array: {}",
+    //     same(&mut vec![1, 2, 3], &mut vec![4, 1, 9])
+    // );
+    // println!("same array: {}", same(&mut vec![1, 2, 3], &mut vec![1, 9]));
+    // println!(
+    //     "same array: {}",
+    //     same(&mut vec![1, 2, 1], &mut vec![4, 1, 4])
+    // );
+    // println!(
+    //     "same array: {}",
+    //     same(&mut vec![1, 2, 1], &mut vec![4, 1, 1])
+    // );
+    // println!(
+    //     "same array: {}",
+    //     same(&mut vec![0, 0, 0], &mut vec![0, 0, 0])
+    // );
 }
