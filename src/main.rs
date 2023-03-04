@@ -12,8 +12,9 @@
 /* use validate_pin::validate_pin; */
 
 // use love_vs_friendship::words_to_marks;
-use petals::how_much_i_love_you;
+// use petals::how_much_i_love_you;
 // use same::same;
+use greet::greet;
 
 /* mod prime_number; */
 /* mod factorial; */
@@ -29,8 +30,9 @@ use petals::how_much_i_love_you;
 // mod median_and_mode;
 /* mod pyg_latin; */
 
-mod petals;
-mod same;
+// mod petals;
+// mod same;
+mod greet;
 
 fn main() {
     // prime_number::is_prime_number(1);
@@ -92,13 +94,13 @@ fn main() {
     // println!("words to marks {}", words_to_marks("friendship"));
     // println!("words to marks {}", words_to_marks("knowledge"));
 
-    println!("{} petals is: {}", 8, how_much_i_love_you(8));
-    println!("{} petals is: {}", 30, how_much_i_love_you(30));
-    println!("{} petals is: {}", 1, how_much_i_love_you(1));
-    println!("{} petals is: {}", 3, how_much_i_love_you(3));
-    println!("{} petals is: {}", 7, how_much_i_love_you(7));
-    println!("{} petals is: {}", 6, how_much_i_love_you(6));
-    println!("{} petals is: {}", 5, how_much_i_love_you(5));
+    // println!("{} petals is: {}", 8, how_much_i_love_you(8));
+    // println!("{} petals is: {}", 30, how_much_i_love_you(30));
+    // println!("{} petals is: {}", 1, how_much_i_love_you(1));
+    // println!("{} petals is: {}", 3, how_much_i_love_you(3));
+    // println!("{} petals is: {}", 7, how_much_i_love_you(7));
+    // println!("{} petals is: {}", 6, how_much_i_love_you(6));
+    // println!("{} petals is: {}", 5, how_much_i_love_you(5));
 
     // println!(
     //     "same array: {}",
@@ -117,4 +119,8 @@ fn main() {
     //     "same array: {}",
     //     same(&mut vec![0, 0, 0], &mut vec![0, 0, 0])
     // );
+
+    println!("{}", greet("Jessica"));
+    println!("{}", greet("messica"));
+    println!("{}", greet("AARON"));
 }
