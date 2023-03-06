@@ -14,7 +14,8 @@
 // use love_vs_friendship::words_to_marks;
 // use petals::how_much_i_love_you;
 // use same::same;
-use greet::greet;
+/* use greet::greet; */
+use summer::two_sum;
 
 /* mod prime_number; */
 /* mod factorial; */
@@ -32,7 +33,8 @@ use greet::greet;
 
 // mod petals;
 // mod same;
-mod greet;
+// mod greet;
+mod summer;
 
 fn main() {
     // prime_number::is_prime_number(1);
@@ -120,7 +122,11 @@ fn main() {
     //     same(&mut vec![0, 0, 0], &mut vec![0, 0, 0])
     // );
 
-    println!("{}", greet("Jessica"));
-    println!("{}", greet("messica"));
-    println!("{}", greet("AARON"));
+    // println!("{}", greet("Jessica"));
+    // println!("{}", greet("messica"));
+    // println!("{}", greet("AARON"));
+
+    println!("{:?}", two_sum(&[1, 2, 3], 4));
+    println!("{:?}", two_sum(&[1234, 5678, 9012], 14690));
+    println!("{:?}", two_sum(&[2, 2, 3], 4));
 }
