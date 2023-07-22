@@ -16,6 +16,9 @@
 // use same::same;
 /* use greet::greet; */
 use summer::two_sum;
+// use duplicate::contains_duplicate;
+// use is_anagram::is_anagram;
+use spin_words::spin_words;
 
 /* mod prime_number; */
 /* mod factorial; */
@@ -35,6 +38,10 @@ use summer::two_sum;
 // mod same;
 // mod greet;
 mod summer;
+// mod duplicate;
+// mod is_anagram;
+mod spin_words;
+mod sort_array;
 
 fn main() {
     // prime_number::is_prime_number(1);
@@ -129,4 +136,15 @@ fn main() {
     println!("{:?}", two_sum(&[1, 2, 3], 4));
     println!("{:?}", two_sum(&[1234, 5678, 9012], 14690));
     println!("{:?}", two_sum(&[2, 2, 3], 4));
+
+    // println!("{}", contains_duplicate(vec![1, 2, 3, 1]));
+    // println!("{}", contains_duplicate(vec![1,2,3,4]));
+    // println!("{}", contains_duplicate(vec![1,1,1,3,3,4,3,2,4,2]));
+
+    // println!("{}", is_anagram(String::from("anagram"), String::from("baker")));
+    // println!("{}", is_anagram(String::from("anagram"), String::from("margana")));
+    // println!("{}", is_anagram(String::from("bale"), String::from("able")));
+    // println!("{}", is_anagram(String::from("bele"), String::from("able")));
+
+    println!("{}", spin_words("Hey fellow warriors"));
 }

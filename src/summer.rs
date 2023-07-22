@@ -5,19 +5,18 @@ For the purposes of this kata, some tests may have multiple answers; any valid s
 The input will always be valid (numbers will be an array of length 2 or greater, and all of the items will be numbers; target will always be the sum of two different items from that array).
 
 /// two_sum(&[1, 2, 3], 4) // return (0, 2) or (2, 0)
-*/
-pub fn two_sum(numbers: &[i32], target: i32) -> (usize, usize) {
-    let numbers = numbers.to_vec();
-    let mut result: Vec<usize> = Vec::new();
-    // subtract the target from the value and check if the remainder is in the array
+*/use std::collections::HashMap;
+
+pub fn two_sum(numbers: &[i32], target: i32) -> (i32, i32) {
+    let mut hashmap = HashMap::new();
     for (idx, num) in numbers.iter().enumerate() {
         let remainder = target - num;
-        if numbers.contains(&remainder) {
-            // get the last index of the remainder, but it should not be in the same position as the num
-            let first = numbers.iter().rposition(|x| x == &remainder).unwrap();
-            result.push(first);
-            result.push(idx);
+        match hashmap.get(&remainder) {
+            Some(&j) => return (idx as i32, j),
+            None => {
+                hashmap.insert(num, idx as i32);
+            }
         }
     }
-    (result[0], result[1])
+    (0, 0)
 }
