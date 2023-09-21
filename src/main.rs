@@ -18,8 +18,10 @@
 use summer::two_sum;
 // use duplicate::contains_duplicate;
 // use is_anagram::is_anagram;
+use create_palindrome::find_palindrome;
 use spin_words::spin_words;
 
+mod create_palindrome;
 /* mod prime_number; */
 /* mod factorial; */
 // mod reverse_string;
@@ -40,8 +42,10 @@ use spin_words::spin_words;
 mod summer;
 // mod duplicate;
 // mod is_anagram;
-mod spin_words;
+mod product_triple;
+mod score;
 mod sort_array;
+mod spin_words;
 
 fn main() {
     // prime_number::is_prime_number(1);
@@ -147,4 +151,5 @@ fn main() {
     // println!("{}", is_anagram(String::from("bele"), String::from("able")));
 
     println!("{}", spin_words("Hey fellow warriors"));
+    prin
 }
