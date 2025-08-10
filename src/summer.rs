@@ -5,7 +5,8 @@ For the purposes of this kata, some tests may have multiple answers; any valid s
 The input will always be valid (numbers will be an array of length 2 or greater, and all of the items will be numbers; target will always be the sum of two different items from that array).
 
 /// two_sum(&[1, 2, 3], 4) // return (0, 2) or (2, 0)
-*/use std::collections::HashMap;
+*/
+use std::collections::HashMap;
 
 pub fn two_sum(numbers: &[i32], target: i32) -> (i32, i32) {
     let mut hashmap = HashMap::new();
